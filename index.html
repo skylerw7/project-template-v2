@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Project One Template - Homepage</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-	<header>
-		<!-- header, h1, logo etc content -->
-		<h1>Camping Stoves</h1>
-		<h2>Header Two</h2>
-		<h3>Header Three</h3>
-		<h4>Header Four</h4>
-		<p>A paragraph of lorem ipsum text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, eligendi.</p>
-	</header>
 
-	<nav>
-		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
-		<ul>
-			<li><a href="subpage-one.html">example link to subpage one</a></li>
-			<li><a href="#">link</a></li>
-			<li><a href="#">link</a></li>
-		</ul>
-	</nav>
-	<main>
-		<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta vero fugiat saepe, tempore laboriosam nemo pariatur maxime sunt rerum."</blockquote>
-	<!-- Main content here -->
-		<div class="grid">
-			<div>Column 1</div>
-			<div>Column 2</div>
-		</div>
-	</main>
-	<footer>
-		<!-- footer content here -->
-		&copy; Team Awesome
-	</footer>
-	<!-- link for jquery -->
-	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
-  	<script src="js/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Automatiste</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link to jQuery UI-->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script src="js/animatescroll.min.js"></script>
+ <script src="js/automatiste.js"></script>
+<script>
+    $(document).ready(function(){
+        var navbarHeight = $(".navbar").height(120);
+        $(".navbar").mouseenter(function(){
+            $(this).animate({
+                height: "100vh"
+            });
+        }).mouseleave(function(){
+            $(this).animate({
+                height: navbarHeight
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+
+ <div class="navbar">
+               <nav>
+               <a href="#container" class="link1">WHAT</a>
+                <a href="#whopage" class="link2">WHO</a>
+                <a href="#whypage" class="link3">WHY</a>
+               <a href="#howpage" class="link4">HOW</a>
+           
+            <div class="pagetitle">
+                <h1>AUTOMATISTE</h1>
+            </div>
+             </nav>
+             <div class="description">
+                 <p>Automatic drawing is known by many names but could be closely compared to the act of doodling. This lets you sink into the quality and experience of making marks and developing the relationships between them which in turn lifts you out of your logical brain’s desire to make something that’s “good” or “accurate.”<br><br>It lets you tap more easily into your intuition, emotions, and the physical experience of drawing and painting.<br><br>So if you judge your own drawing ability, this technique can be very liberating because it’s so physical, there’s no wrong way to do it, and it improves your drawing skills in the process.<br><br>Most importantly, it gets you out of your head.</p>
+                 
+             </div>
+             </div>
+<section id="#section1">
+    <div class="start">
+     <img src="images/Untitled_Artwork%2094.png">
+    
+</div>
+</section>
+    <section id="container">
+       
+        <div class="left">
+           
+</div>
+
+       
+
+
+        <div class="right">RIGHT SIDE</div>
+       
+    </section>
+    <section id="whopage">
+        <div class="leftartists">
+            
+        </div>
+          <div class="rightartists">
+            <div class='firstartist'>
+                
+            </div>
+            <div class='secondartist'>
+                
+            </div>
+        </div>
+        
+    </section>
+     <section id="whypage">
+        
+    </section>
+      <section id="howpage">
+        <div class ="draw">
+           
+        </div>
+    </section>
+
+
 </body>
+
 </html>

@@ -1,62 +1,216 @@
-/* Enter your Styles below! */
-
-body { 
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-     }
-
-h1, h2, h3, h4 {
-    font-family: Helvetica, sans-serif;
+body {
+    /*    background-color:black;*/
+    /*    z-index:1;*/
 }
 
-h1 {
-    font-size: 48px;
+.start {
+    /*    background-color: red;*/
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    position: absolute;
 }
 
-h2 {
-    font-size: 36px;
+#section1 {}
+
+#container {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
 }
 
-h3 {
-    font-size: 28px;
-}
-h4 {
-    font-size: 24px;
+
 }
 
-blockquote {
-    margin: 20px 60px;
-    font-family: Helvetica, sans-serif;
+.left {
+    box-sizing: border-box;
+    height: 100vh;
+
+    padding: 25px 100px 100px 25px;
+    color: white;
+
 }
 
-header {margin-bottom: 20px;}
+.right {
+    box-sizing: border-box;
+    height: 100vh;
 
-/* ensures that your images stretch the width of their containers */
-img { width: 100%; }
+    padding: 100px;
+    color: white;
+}
 
-a { 
-    color: red;
+.navbar {
+    box-sizing: border-box;
+    padding: 30px;
+    position: fixed;
+    z-index: 80;
+    background-color: black;
+    height: 220px;
+    width: 35%;
+    top: 0px;
+    left: 0px;
+
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+
+}
+
+nav a {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    align-content: center;
+    border-style: solid;
+    border-color: grey;
+    padding: 5px 15px;
+    margin-bottom: 20px;
     text-decoration: none;
-     }
-a:hover { color: black; }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    width: 60%;
-    margin: auto;
+    
 }
 
-.grid div {
-    background-color: #ccc;
-    padding: 20px;
+nav a:visited {
+    text-decoration: none;
+    color:white;
+   
 }
 
-@media only screen and (min-width:768px) {
+nav a:hover {
+    text-decoration:none;
+    color:white;
+     border-color:white;
+}
+
+.description {
+    font-size: 18px;
+    color: white;
+    margin: 100px 70px 0px 70px;
+}
+
+/*OLD nav*/
+/*
+.what {
+    display: inline-block;
+    margin: 0px 40px 0px 40px;
+    align-content: center;
+    background-color: none;
+    border-style: none;
+    color: white;
 
 }
 
-@media only screen and (min-width:1224px) {
+.who {
+    display: inline-block;
+    margin: 0px 40px 0px 40px;
+    align-content: center;
+    background-color: none;
+    border-style: none;
+    color: white;
+}
 
+.why {
+    display: inline-block;
+    margin: 0px 40px 0px 40px;
+    align-content: center;
+    background-color: none;
+    border-style: none;
+    color: white;
+}
+
+
+
+
+.how {
+    display: inline-block;
+    margin: 0px 40px 0px 40px;
+    align-content: center;
+    background-color: none;
+    border-style: none;
+    color: white;
+}
+*/
+
+.pagetitle {
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    margin-top: -50px;
+    margin-left: 12%
+}
+
+#whopage {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 35% 65%;
+    position: relative;
+    background-color: grey;
+    height: 100vh;
+    z-index;
+    2;
+}
+
+.leftartists {
+    /*    background-color:red;*/
+}
+
+.rightartists {
+    /*    background-color:blue;*/
+    display: inline-grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+
+}
+
+.firstartist {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    margin: 300px 300px 300px 100px;
+     z-index:
+    90;
+}
+
+.secondartist {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    margin: 300px 300px 300px 200px;
+      z-index:
+    90;
+}
+#whypage {
+    position: relative;
+    /*    background-color: blue;*/
+    height: 100vh;
+    z-index:
+        2;
+}
+
+#howpage {
+    position: relative;
+    background-color: grey;
+    height: 100vh;
+    z-index:
+    79;
+}
+
+.draw {
+/*    background-color: red;*/
+    height: 100vh;
+    z-index:
+        100;
+}
+
+
+img {
+    width: 130vw;
+
+    position: absolute;
+    top: 0px;
+    z-index: 1;
 }
