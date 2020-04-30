@@ -52,7 +52,7 @@ body {
     top: 0px;
     left: 0px;
     color: white;
-
+text-decoration: none;
 }
 
 nav {
@@ -61,7 +61,7 @@ nav {
     text-align: center;
     background-color: black;
     color:white;
-
+text-decoration: none;
 }
 
 nav a {
