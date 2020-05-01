@@ -191,6 +191,8 @@ nav a:hover {
     grid-row-end: 7;
     bottom: 0px;
 }
+.galleryitem1:hover {
+    background: url("paulart.jpg");}
 
 .galleryitem2 {
     margin-top: 100px;
